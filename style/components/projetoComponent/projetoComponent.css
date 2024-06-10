@@ -1,0 +1,49 @@
+
+
+projetos {
+    display: flex!important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.projetoContent {
+    padding: 5rem 5rem 0rem 5rem;
+    display: flex!important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+}
+
+.projetoDescricao {
+    /*margin-top: 2rem;*/
+    font-size: 24px;
+    width: 604px;
+    height: 342px;
+}
+
+.imgProjeto {
+
+}
+
+.idea {
+    padding: 1rem 2rem ;
+    border-width: 3px;
+    border-radius: 30px;
+
+}
+
+.frasEfeito {
+    display: flex;
+    width: 1150px;
+    height: 130px;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+
+}

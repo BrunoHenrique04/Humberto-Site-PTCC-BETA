@@ -1,0 +1,78 @@
+@keyframes HumberSlide {
+    0% {
+        transform: translateY(-450%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes HumberCover {
+    0% {
+        clip-path: inset(0 0 78% 0);
+    }
+    100% {
+        clip-path: inset(0 0 0% 0);
+    }
+}
+
+.humbetTitle {
+    animation: 2s ease-in-out 0s 1 HumberSlide;
+}
+
+.hubertoTotem {
+    animation: 2s ease-in-out 0s 1 HumberCover;
+}
+
+totem {
+    display: flex!important;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hubertoTotem {
+    z-index: 3;
+    width: 27.45rem;
+    height: 28.5rem;
+    /*background: lightgrey;*/
+    /*background: url("../../source/img/4d607aa143a88507c3cadcb3c0ed36e8-peca-de-xadrez-de-torre.webp");*/
+    background-repeat: no-repeat;
+}
+
+.brackgroundTotem {
+    height: 28.5rem;
+    width: 100%;
+
+    background: url("../../../source/img/4d607aa143a88507c3cadcb3c0ed36e8-peca-de-xadrez-de-torre.webp");
+    background-repeat: no-repeat;
+    background-size: 30rem;
+}
+
+.humbetTitle {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 6.25rem;
+    /*background-color: green;*/
+    position: relative;
+    top: -30px;
+    line-height: 73%;
+    background: rgba(255, 255, 255, 0);
+    z-index: 4;
+    transition: background 0.1s;
+
+}
+
+.mask1 {
+    -webkit-mask-image: url(../../../source/img/w3logo.png);
+    mask-image: url(../../../source/img/w3logo.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+}
+
+.parallax1 {
+
+}
