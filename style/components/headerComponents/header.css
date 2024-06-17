@@ -26,6 +26,9 @@ header > * {
     font-size: 1.5rem;
 }
 
+.nav-link {
+    white-space: nowrap;
+}
 
 .nav > .nav-item > .nav-link {
 
@@ -57,3 +60,10 @@ header > * {
 }
 
 
+@media (max-width: 992px)
+
+{
+    .nav-collapse-flex {
+        width: 100%;
+    }
+}

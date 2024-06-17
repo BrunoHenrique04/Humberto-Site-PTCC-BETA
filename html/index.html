@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+
     <meta charset="UTF-8">
     <title>Humberto - Totem</title>
 
@@ -19,27 +25,37 @@
 
 </head>
 <body>
+    <header class="header fixed-top container-fluid w-100" id="header"> <!--Inicio Cabeçalho - Componente header-->
+        <nav class="navbar navbar-dark navbar-expand-lg ">
+            <div class="nav-collapse-flex d-flex justify-content-between">
+            <a class="navbar-brand " href="#">PASSA TEMPO</a>
+            <hamburguerButton class="">
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </hamburguerButton>
+            </div>
 
-    <header class="header fixed-top" id="header"> <!--Inicio Cabeçalho - Componente header-->
-        <nav class="navbar navbar-dark ">
-            <a class="navbar-brand" href="#">PASSA TEMPO</a>
-            <div class="w-100" id="navbarSupportedContent">
-                <ul class="nav d-flex justify-content-around">
-                    <li class="nav-item active">
+            <div class="w-100  collapse navbar-collapse" id="navbarText">
+
+                <ul class="nav w-100 d-flex justify-content-around row">
+
+
+                    <li class="nav-item active col-md-1">
                         <a class="nav-link active" href="#" id="navHome">Home</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item col-md-1">
                         <a class="nav-link" href="#" id="navProjetos">Projetos</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="navSobreNos">Sobre Nos</a>
+                    <li class="nav-item col-md-1">
+                        <a class="nav-link" href="#" id="navSobreNos">Sobre-Nos</a>
                     </li>
 
                 </ul>
             </div>
         </nav>
    </header> <!--Fim  Cabeçalho -->
-
+    <itens class="row w-100">
     <totem class="w-100 h-100 d-flex humbertobody " id="totem"> <!--Inicio Totem Component -->
         <div class="hubertoTotem mt-5"  >
             <div class="brackgroundTotem" id="parallax1">
@@ -51,24 +67,26 @@
         </div>
     </totem>
 
-    <projetos class="w-100 h-100 d-flex" id="projetos">
-        <div class="projetoContent">
-        <div class="projetoIdea">
-            <div class="projetoDescricao ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta suscipit euismod. Quisque accumsan ut est ultricies malesuada. Sed consequat a augue et mollis. Curabitur ac sapien tortor. Etiam vehicula elit eu nibh convallis imperdiet. Proin semper elit non erat sollicitudin congue. Curabitur egestas ex ac fermentum finibus. Sed fermentum nec turpis quis viverra.
+    <projetos class="w-100 h-100 row" id="projetos">
+        <div class="projetoContent w-100 row justify-content-sm-center">  <!--TODO: PERGUNTAR POR QUE NÃO CENTRALIZA SE EMBAIXO VAI-->
+            <div class="projetoIdea col-md-6 col-sm-10">
+                <div class="projetoDescricao w-100w">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta suscipit euismod. Quisque accumsan ut est ultricies malesuada. Sed consequat a augue et mollis. Curabitur ac sapien tortor. Etiam vehicula elit eu nibh convallis imperdiet. Proin semper elit non erat sollicitudin congue. Curabitur egestas ex ac fermentum finibus. Sed fermentum nec turpis quis viverra.
 
+                </div>
+            <button class="btn btn-outline-light idea">Ideia</button>
             </div>
-        <button class="btn btn-outline-light idea">Ideia</button>
+            <div class="imgProjeto col-md-4 col-sm-10 "><img src="../source/img/4d607aa143a88507c3cadcb3c0ed36e8-peca-de-xadrez-de-torre.webp" class="img-fluid img-thumbnail" width="75%" alt="" ></div>
         </div>
-        <div class="imgProjeto"><img src="../source/img/4d607aa143a88507c3cadcb3c0ed36e8-peca-de-xadrez-de-torre.webp" class="img-fluid img-thumbnail" width="75%" alt="" ></div>
+        <div class="w-100 row justify-content-center">
+            <div class="frasEfeito col-md-10">"Só porque eles não enxergam, <br>
+                não significa que não devem ser vistos".</div>
         </div>
-        <div class="frasEfeito">"Só porque eles não enxergam, <br>
-            não significa que não devem ser vistos".</div>
     </projetos>
 
-    <sobreNos class=" d-flex " id="sobreNos">
-        <div class="fotoNossa d-flex"><img src="../source/img/image.png" alt="Brad Bruno Eduardo E Vitor felizes" class="imgFotoNossa img-fluid" width="96%" height="96%"></div>
-        <div class="sobreNosText">
+    <sobreNos class="row justify-content-md-start justify-content-sm-center" id="sobreNos">
+        <div class="fotoNossa col-md-4 offset-md-0"><img src="../source/img/image.png" alt="Brad Bruno Eduardo E Vitor felizes" class="imgFotoNossa img-fluid" width="96%" height="96%"></div>
+        <div class="sobreNosText col-md-6 col-sm-10"> <!-- offset-md-6  TODO: PERGUNTAR POR QUE COM O OFFSET QUEBRA TUDO-->
             <div class="sobreNosTitle">SOBRE - NOS</div>
             <div class="sobreNosDescricao">
                 <div class="descricao">
@@ -105,6 +123,6 @@
         </div>
     </sobreNos>
 
-
+    </itens>
 </body>
 </html>

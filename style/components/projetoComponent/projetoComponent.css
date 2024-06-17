@@ -11,10 +11,8 @@ projetos {
 
 .projetoContent {
     padding: 5rem 5rem 0rem 5rem;
-    display: flex!important;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
     align-items: center;
     gap: 55px;
 }
@@ -22,8 +20,6 @@ projetos {
 .projetoDescricao {
     /*margin-top: 2rem;*/
     font-size: 24px;
-    width: 604px;
-    height: 342px;
 }
 
 .imgProjeto {
@@ -38,12 +34,32 @@ projetos {
 }
 
 .frasEfeito {
-    display: flex;
-    width: 1150px;
-    height: 130px;
+    /* display: flex; */
+    /* width: 1150px; */
+    /* height: 130px; */
     font-size: 55px;
     font-weight: bold;
     text-align: center;
-    justify-content: center;
+    /* justify-content: center; */
 
+}
+
+
+@media (max-width: 767px) {
+    .projetoContent {
+        flex-wrap: wrap-reverse;
+
+    }
+
+    .projetoDescricao {
+        font-size: 0.625rem;
+    }
+
+    .idea {
+        display: none;
+    }
+
+    .frasEfeito {
+        display: none;
+    }
 }

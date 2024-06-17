@@ -1,3 +1,5 @@
+
+
 @keyframes HumberSlide {
     0% {
         transform: translateY(-450%);
@@ -42,12 +44,13 @@ totem {
 }
 
 .brackgroundTotem {
-    height: 28.5rem;
+    height: 100%;
     width: 100%;
 
     background: url("../../../source/img/4d607aa143a88507c3cadcb3c0ed36e8-peca-de-xadrez-de-torre.webp");
     background-repeat: no-repeat;
-    background-size: 30rem;
+    background-position: center;
+    background-size: 109.29%;
 }
 
 .humbetTitle {
@@ -75,4 +78,41 @@ totem {
 
 .parallax1 {
 
+}
+
+
+
+/*--------------Android Screen*/
+
+
+@keyframes HumberSlide {
+    0% {
+        transform: translateY(-550%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes HumberCover {
+    0% {
+        clip-path: inset(0 0 78% 0);
+    }
+    100% {
+        clip-path: inset(0 0 0% 0);
+    }
+}
+
+@media (max-width: 767px) {
+    .hubertoTotem {
+        width: 15.438rem;
+        height: 17.375rem;
+    }
+
+    .brackgroundTotem {
+    }
+
+    .humbetTitle {
+        font-size: 3.125rem;
+    }
 }
